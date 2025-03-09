@@ -69,14 +69,14 @@
                 </div>
                 <div class="contact-info">
                     <p>Телефон: <a href="tel:+375445118049">+375(44)511-80-49</a></p>
-                    <p>И.П. Атрошенко Е.В. УНП 100693551</p>
+                    <p>ИП Атрошенко Е.В. УНП 100693551</p>
                     <p>Режим работы: ежедневно с 8:00 до 22:00</p>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="gallery">
+    <section id="gallery" class="gallery">
         <div class="container">
             <h2>Портфолио наших работ</h2>
             <div class="gallery-grid">
@@ -132,7 +132,7 @@
         </div>
     </section>
 
-    <section class="services">
+    <section id="services" class="services">
         <div class="container">
             <h2>Бетонные работы любой сложности в Вилейке</h2>
             <div class="services-grid">
@@ -152,14 +152,14 @@
                     <p class="price">от 70 руб./м²</p>
                 </div>
                 <div class="service-card">
-                    <h3>Бетонная отмостка</h3>
+                    <h3>Монолитный пояс</h3>
                     <p>Защищает фундамент от осадков и грунтовых вод. Обеспечивает долговечность всей конструкции здания.</p>
                     <p class="price">от 45 руб./м²</p>
                 </div>
                 <div class="service-card">
-                    <h3>Монолитные лестницы</h3>
+                    <h3>Лестницы и ступень на крыльцо</h3>
                     <p>Прочные и долговечные бетонные лестницы любой конфигурации. Индивидуальный дизайн под ваш проект.</p>
-                    <p class="price">от 350 руб./ступень</p>
+                    <p class="price">от 960 руб./ступень</p>
                 </div>
                 <div class="service-card">
                     <h3>Бетонные полы</h3>
@@ -210,7 +210,7 @@
         </div>
     </section>
 
-    <section class="prices">
+    <section id="prices" class="prices">
         <div class="container">
             <h2>Стоимость популярных работ при строительстве фундамента</h2>
             <div class="price-tables">
@@ -236,7 +236,7 @@
                         <tr>
                             <td>Монолитное ж/б перекрытие</td>
                             <td>от 70 руб./м²</td>
-                            <td>от 280 руб./м²</td>
+                            <td>от 280 руб./m²</td>
                         </tr>
                         <tr>
                             <td>Монолитный пояс</td>
@@ -259,7 +259,7 @@
                             <td>от 280 руб/м²</td>
                         </tr>
                         <tr>
-                            <td>Крыльцо</td>
+                            <td>Лестница и ступень на крыльцо</td>
                             <td colspan="2">от 960 руб./изделие (индивидуально)</td>
                         </tr>
                         <tr>
@@ -280,7 +280,7 @@
         </div>
     </section>
 
-    <section class="stages">
+    <section id="stages" class="stages">
         <div class="container">
             <h2>Этапы работ по фундаменту</h2>
             <div class="stages-grid">
@@ -330,7 +330,7 @@
         </div>
     </section>
 
-    <section class="testimonials">
+    <section id="testimonials" class="testimonials">
         <div class="container">
             <h2>Отзывы наших клиентов</h2>
             <div class="testimonials-grid">
@@ -413,7 +413,7 @@
         </div>
     </section>
 
-    <section class="contacts">
+    <section id="contacts" class="contacts">
         <div class="container">
             <h2>Контакты</h2>
             <div class="contacts-wrapper">
@@ -610,6 +610,22 @@
                 mobileMenu.classList.remove('active');
                 overlay.classList.remove('active');
                 document.body.style.overflow = '';
+            });
+        });
+
+        // Добавляем плавную прокрутку для ссылок в футере
+        document.querySelectorAll('.footer-links a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
             });
         });
     });
