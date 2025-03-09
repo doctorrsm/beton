@@ -75,6 +75,60 @@
         </div>
     </header>
 
+    <section class="gallery">
+        <div class="container">
+            <h2>Портфолио наших работ</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/portfolio/foundation-1.jpg" alt="Свайно-ростверковый фундамент">
+                    <div class="gallery-overlay">
+                        <h3>Свайно-ростверковый фундамент</h3>
+                        <p>Частный дом 10х12м</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/portfolio/foundation-2.jpg" alt="Ленточный фундамент">
+                    <div class="gallery-overlay">
+                        <h3>Ленточный фундамент</h3>
+                        <p>Коттедж 8х10м</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/portfolio/foundation-3.jpg" alt="Монолитная плита">
+                    <div class="gallery-overlay">
+                        <h3>Монолитная плита</h3>
+                        <p>Загородный дом 12х14м</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/portfolio/foundation-4.jpg" alt="Фундамент УШП">
+                    <div class="gallery-overlay">
+                        <h3>Фундамент УШП</h3>
+                        <p>Дом из газобетона 9х12м</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/portfolio/foundation-5.jpg" alt="Блочный фундамент">
+                    <div class="gallery-overlay">
+                        <h3>Блочный фундамент</h3>
+                        <p>Гараж 6х8м</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/portfolio/foundation-6.jpg" alt="Столбчатый фундамент">
+                    <div class="gallery-overlay">
+                        <h3>Столбчатый фундамент</h3>
+                        <p>Баня 6х6м</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-note">
+                <p>* Это лишь часть наших работ. Больше проектов можно посмотреть при личной встрече</p>
+                <button class="cta-button">Посмотреть все работы</button>
+            </div>
+        </div>
+    </section>
+
     <section class="services">
         <div class="container">
             <h2>Строим все виды фундаментов в Вилейке</h2>
@@ -183,22 +237,22 @@
                         <tr>
                             <td>Монолитный пояс</td>
                             <td>от 45 руб/м.п.</td>
-                            <td>от 100 руб/м.п.</td>
+                            <td>от 100 руб/m.п.</td>
                         </tr>
                         <tr>
                             <td>Монолитная балка</td>
                             <td>от 130 руб/м.п.</td>
-                            <td>от 280 руб/м2</td>
+                            <td>от 280 руб/m2</td>
                         </tr>
                         <tr>
                             <td>Монолитная колонна</td>
                             <td>от 130 руб/м.п.</td>
-                            <td>от 280 руб/м2</td>
+                            <td>от 280 руб/m2</td>
                         </tr>
                         <tr>
                             <td>Стена</td>
                             <td>от 130 руб/м.п.</td>
-                            <td>от 280 руб/м2</td>
+                            <td>от 280 руб/m2</td>
                         </tr>
                         <tr>
                             <td>Крыльцо</td>
@@ -206,7 +260,7 @@
                         </tr>
                         <tr>
                             <td>Черновые бетонные полы армированные, без затирки поверхности</td>
-                            <td colspan="2">от 22 руб./м2 (индивидуально)</td>
+                            <td colspan="2">от 22 руб./m2 (индивидуально)</td>
                         </tr>
                     </tbody>
                 </table>
@@ -217,7 +271,6 @@
                         <span class="price-value">2300 бел.руб.</span>
                     </div>
                     <p>* Точная стоимость определяется после осмотра участка и зависит от типа грунта, глубины промерзания и других факторов</p>
-                    <button class="cta-button">Рассчитать стоимость</button>
                 </div>
             </div>
         </div>
@@ -273,121 +326,9 @@
         </div>
     </section>
 
-    <section class="calculator">
-        <div class="container">
-            <h2>Рассчитать стоимость фундамента</h2>
-            <form id="calculatorForm" class="calculator-form">
-                <div class="form-grid">
-                    <div class="form-group">
-                        <label for="foundation-type">Тип фундамента</label>
-                        <select id="foundation-type" required>
-                            <option value="">Выберите тип фундамента</option>
-                            <option value="svayno">Свайно-ростверковый</option>
-                            <option value="lenta">Ленточный</option>
-                            <option value="plita">Монолитная плита</option>
-                            <option value="ushp">УШП</option>
-                            <option value="fbs">Блочный ФБС</option>
-                            <option value="stolb">Столбчатый</option>
-                        </select>
-                    </div>
 
-                    <div class="form-group">
-                        <label for="house-size">Размер дома</label>
-                        <div class="size-inputs">
-                            <input type="number" id="house-length" placeholder="Длина (м)" required>
-                            <span>x</span>
-                            <input type="number" id="house-width" placeholder="Ширина (м)" required>
-                        </div>
-                    </div>
 
-                    <div class="form-group">
-                        <label for="walls-type">Материал стен</label>
-                        <select id="walls-type" required>
-                            <option value="">Выберите материал</option>
-                            <option value="brick">Кирпич</option>
-                            <option value="block">Газобетон</option>
-                            <option value="wood">Дерево</option>
-                        </select>
-                    </div>
 
-                    <div class="form-group">
-                        <label for="floors">Количество этажей</label>
-                        <select id="floors" required>
-                            <option value="1">1 этаж</option>
-                            <option value="2">2 этажа</option>
-                            <option value="3">3 этажа</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-footer">
-                    <div class="contact-details">
-                        <input type="tel" placeholder="Ваш телефон" required>
-                        <input type="text" placeholder="Ваше имя" required>
-                    </div>
-                    <button type="submit" class="cta-button">Рассчитать стоимость</button>
-                </div>
-
-                <div class="calculator-note">
-                    <p>* Расчет является предварительным. Точная стоимость определяется после выезда специалиста на участок</p>
-                </div>
-            </form>
-        </div>
-    </section>
-
-    <section class="gallery">
-        <div class="container">
-            <h2>Портфолио наших работ</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="images/portfolio/foundation-1.jpg" alt="Свайно-ростверковый фундамент">
-                    <div class="gallery-overlay">
-                        <h3>Свайно-ростверковый фундамент</h3>
-                        <p>Частный дом 10х12м</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/portfolio/foundation-2.jpg" alt="Ленточный фундамент">
-                    <div class="gallery-overlay">
-                        <h3>Ленточный фундамент</h3>
-                        <p>Коттедж 8х10м</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/portfolio/foundation-3.jpg" alt="Монолитная плита">
-                    <div class="gallery-overlay">
-                        <h3>Монолитная плита</h3>
-                        <p>Загородный дом 12х14м</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/portfolio/foundation-4.jpg" alt="Фундамент УШП">
-                    <div class="gallery-overlay">
-                        <h3>Фундамент УШП</h3>
-                        <p>Дом из газобетона 9х12м</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/portfolio/foundation-5.jpg" alt="Блочный фундамент">
-                    <div class="gallery-overlay">
-                        <h3>Блочный фундамент</h3>
-                        <p>Гараж 6х8м</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/portfolio/foundation-6.jpg" alt="Столбчатый фундамент">
-                    <div class="gallery-overlay">
-                        <h3>Столбчатый фундамент</h3>
-                        <p>Баня 6х6м</p>
-                    </div>
-                </div>
-            </div>
-            <div class="gallery-note">
-                <p>* Это лишь часть наших работ. Больше проектов можно посмотреть при личной встрече</p>
-                <button class="cta-button">Посмотреть все работы</button>
-            </div>
-        </div>
-    </section>
 
     <section class="testimonials">
         <div class="container">
@@ -489,17 +430,6 @@
                     <p>Соблюдаем договорные обязательства</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="contact-form">
-        <div class="container">
-            <h2>Оставьте заявку</h2>
-            <form id="contactForm">
-                <input type="text" placeholder="Ваше имя" required>
-                <input type="tel" placeholder="Ваш телефон" required>
-                <button type="submit">Отправить заявку</button>
-            </form>
         </div>
     </section>
 
