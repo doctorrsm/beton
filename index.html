@@ -9,11 +9,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header fixed">
         <div class="container">
             <nav class="nav">
                 <div class="logo">ФУНДАМЕНТ-ВИЛЕЙКА.БЕЛ</div>
                 
+                <!-- Добавляем desktop menu с правильным порядком пунктов -->
+                <div class="desktop-menu">
+                    <ul class="desktop-menu-list">
+                        <li><a href="#gallery">Портфолио</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#prices">Цены</a></li>
+                        <li><a href="#stages">Этапы работ</a></li>
+                        <li><a href="#testimonials">Отзывы</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+
                 <!-- Кнопка мобильного меню -->
                 <button class="mobile-menu-toggle">
                     <span></span>
@@ -47,7 +59,13 @@
                     <a href="tel:+375445118049">+375(44)511-80-49</a>
                 </div>
             </nav>
-            <div class="hero">
+
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
                 <h1>Фундамент под ключ в Вилейке</h1>
                 <div class="hero-features">
                     <div class="feature">
@@ -74,57 +92,58 @@
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
     <section id="gallery" class="gallery">
         <div class="container">
             <h2>Портфолио наших работ</h2>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="images/portfolio/foundation-1.jpg" alt="Свайно-ростверковый фундамент">
+                    <img src="images/portfolio/foundation-1.jpg" alt="Монолитная плита перекрытия">
+                    <div class="gallery-overlay">
+                        <h3>Монолитная плита перекрытия</h3>
+                        <p>Плита произвольных габаритов, определенных принятым проектом и изготовленная прямо на строительном объекте при помощи профессиональной опалубки. Полученная горизонтальная конструкция обладает высокой прочностью и подойдет для всех типов жилых и промышленных зданий.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/portfolio/foundation-2.jpg" alt="Свайно-ростверковый фундамент">
                     <div class="gallery-overlay">
                         <h3>Свайно-ростверковый фундамент</h3>
-                        <p>Частный дом 10х12м</p>
+                        <p>На сегодняшний день самый популярный тип фундамента в частном домостроении. Применим для любых грунтов, не требует большого расхода материала, имеет хорошую устойчивость и неплохую несущую способность.</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/portfolio/foundation-2.jpg" alt="Ленточный фундамент">
+                    <img src="images/portfolio/foundation-3.jpg" alt="Монолитная плита по грунту">
                     <div class="gallery-overlay">
-                        <h3>Ленточный фундамент</h3>
-                        <p>Коттедж 8х10м</p>
+                        <h3>Монолитная плита по грунту</h3>
+                        <p>Представляет собой железобетонную конструкцию спроектированную под всей площадью застройки, как правило относится к мелкозаглубленному типу фундаментов.</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/portfolio/foundation-3.jpg" alt="Монолитная плита">
+                    <img src="images/portfolio/foundation-4.jpg" alt="Ж/б крыльцо">
                     <div class="gallery-overlay">
-                        <h3>Монолитная плита</h3>
-                        <p>Загородный дом 12х14м</p>
+                        <h3>Ж/б крыльцо</h3>
+                        <p>Неотъемлемая часть дома, при правильном архитектурном и дизайнерском проектировании, помимо основного назначения, также придаст строению большую привлекательность.</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/portfolio/foundation-4.jpg" alt="Фундамент УШП">
+                    <img src="images/portfolio/foundation-5.jpg" alt="Монолитные пояс и балки">
                     <div class="gallery-overlay">
-                        <h3>Фундамент УШП</h3>
-                        <p>Дом из газобетона 9х12м</p>
+                        <h3>Монолитные пояс и балки</h3>
+                        <p>Позволяют равномерно распределить нагрузки от перекрытия из деревянных балок и кровли на несущие элементы. Если терраса спроектирована под общую конструкцию крыши, то лучше выполнить неразрывный монолитный пояс для снятия частичной распорной нагрузки на стены.</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/portfolio/foundation-5.jpg" alt="Блочный фундамент">
+                    <img src="images/portfolio/foundation-6.jpg" alt="Черновой пол по грунту">
                     <div class="gallery-overlay">
-                        <h3>Блочный фундамент</h3>
-                        <p>Гараж 6х8м</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/portfolio/foundation-6.jpg" alt="Столбчатый фундамент">
-                    <div class="gallery-overlay">
-                        <h3>Столбчатый фундамент</h3>
-                        <p>Баня 6х6м</p>
+                        <h3>Черновой пол по грунту</h3>
+                        <p>Позволяет избежать неравномерной просадки уплотненного слоя песка или ПГС, что в дальнейшем максимально исключает растрескивание чистовой стяжки с системой "теплый пол" либо чистовой стяжки с финишным покрытием.</p>
                     </div>
                 </div>
             </div>
             <div class="gallery-note">
                 <p>* Это лишь часть наших работ. Больше фотографий наших работ в Instagram:</p>
+                
                 <a href="https://www.instagram.com/betonnye.raboty.vileika/" target="_blank" class="cta-button instagram-link">
                    <i class="fa-brands fa-instagram"></i> @betonnye.raboty.vileika
                 </a>
@@ -173,14 +192,18 @@
 
     <section class="about">
         <div class="container">
-            <h2>О компании</h2>
+            <h2>О нас</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p class="about-intro">Мы специализируемся на строительстве фундаментов в Вилейке и районе с 2015 года</p>
+                    <p class="about-intro">Мы специализируемся на бетонных работах в Вилейке и районе с 2015 года</p>
                     <div class="about-description">
                         <p>Наша команда состоит из опытных специалистов, которые построили более 200 фундаментов различной сложности. Мы используем современное оборудование и качественные материалы от проверенных поставщиков.</p>
                         <p>Работаем официально, с заключением договора. Выполняем проекты точно в срок, учитывая все пожелания заказчика.</p>
                     </div>
+
+
+                </div>
+
                     <div class="about-advantages">
                         <div class="about-advantage">
                             <div class="advantage-number">10+</div>
@@ -194,13 +217,7 @@
                             <div class="advantage-number">98%</div>
                             <p>Довольных клиентов</p>
                         </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <img src="images/about-company.jpg" alt="Наша команда за работой">
-                    <div class="about-image-caption">
-                        <p>Наша команда на объекте в Вилейке, 2023 год</p>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -231,28 +248,28 @@
                         </tr>
                         <tr>
                             <td>Монолитное ж/б перекрытие</td>
-                            <td>от 70 руб./м²</td>
+                            <td>от 70 руб./m²</td>
                             <td>от 280 руб./m²</td>
                         </tr>
                         <tr>
                             <td>Монолитный пояс</td>
-                            <td>от 45 руб/м.п.</td>
-                            <td>от 100 руб/м.п.</td>
+                            <td>от 45 руб/m²</td>
+                            <td>от 100 руб/m²</td>
                         </tr>
                         <tr>
                             <td>Монолитная балка</td>
-                            <td>от 130 руб/м.п.</td>
-                            <td>от 280 руб/м²</td>
+                            <td>от 130 руб/m²</td>
+                            <td>от 280 руб/m²</td>
                         </tr>
                         <tr>
                             <td>Монолитная колонна</td>
-                            <td>от 130 руб/м.п.</td>
-                            <td>от 280 руб/м²</td>
+                            <td>от 130 руб/m²</td>
+                            <td>от 280 руб/m²</td>
                         </tr>
                         <tr>
                             <td>Стена</td>
-                            <td>от 130 руб/м.п.</td>
-                            <td>от 280 руб/м²</td>
+                            <td>от 130 руб/m²</td>
+                            <td>от 280 руб/m²</td>
                         </tr>
                         <tr>
                             <td>Лестница и ступень на крыльцо</td>
@@ -260,7 +277,7 @@
                         </tr>
                         <tr>
                             <td>Черновые бетонные полы армированные, без затирки поверхности</td>
-                            <td colspan="2">от 22 руб./м² (индивидуально)</td>
+                            <td colspan="2">от 22 руб./m² (индивидуально)</td>
                         </tr>
                     </tbody>
                 </table>
@@ -270,7 +287,7 @@
                         <span class="highlight">Минимальный выезд на фундамент:</span>
                         <span class="price-value">2300 бел.руб.</span>
                     </div>
-                    <p>* Точная стоимость определяется после осмотра участка и зависит от типа грунта, глубины промерзания и других факторов</p>
+                    <p class="gallery-note">* Точная стоимость определяется после осмотра участка и зависит от типа грунта, глубины промерзания и других факторов</p>
                 </div>
             </div>
         </div>
@@ -278,49 +295,47 @@
 
     <section id="stages" class="stages">
         <div class="container">
-            <h2>Этапы работ по фундаменту</h2>
+            <h2>Этапы работ</h2>
             <div class="stages-grid">
                 <div class="stage-card">
                     <div class="stage-number">01</div>
-                    <div class="stage-content">
-                        <h3>Выезд и замеры</h3>
-                        <p>Выезжаем на участок, определяем перепад высот и ставим колья. Проводим геологическую разведку грунта.</p>
-                    </div>
+                    <h3>Консультация и оценка</h3>
+                    <p>Бесплатный выезд на объект, консультация и предварительный расчет стоимости работ. Определение типа фундамента и оптимальных материалов.</p>
                 </div>
                 <div class="stage-card">
                     <div class="stage-number">02</div>
-                    <div class="stage-content">
-                        <h3>Земляные работы</h3>
-                        <p>Выполняем выемку грунта по всему периметру фундамента. Готовим основание под фундамент.</p>
-                    </div>
+                    <h3>Составление проекта</h3>
+                    <p>Разработка детального проекта фундамента с учетом особенностей грунта, будущей постройки и ваших пожеланий. Утверждение сметы.</p>
                 </div>
                 <div class="stage-card">
                     <div class="stage-number">03</div>
-                    <div class="stage-content">
-                        <h3>Опалубка и армирование</h3>
-                        <p>Выставляем опалубку и производим армирование. Создаем прочный каркас будущего фундамента.</p>
-                    </div>
+                    <h3>Земляные работы</h3>
+                    <p>Разметка участка, земляные работы, рытье траншей, создание песчаной подушки и её тщательное уплотнение.</p>
                 </div>
                 <div class="stage-card">
                     <div class="stage-number">04</div>
-                    <div class="stage-content">
-                        <h3>Заливка бетона</h3>
-                        <p>Производим заливку фундамента бетоном марки не ниже М300. Контролируем качество и уровень заливки.</p>
-                    </div>
+                    <h3>Монтаж опалубки</h3>
+                    <p>Установка и обвязка опалубки в соответствии с проектной документацией, укладка гидроизоляционных материалов.</p>
                 </div>
                 <div class="stage-card">
                     <div class="stage-number">05</div>
-                    <div class="stage-content">
-                        <h3>Гидроизоляция</h3>
-                        <p>Выполняем комплекс работ по защите фундамента от влаги и грунтовых вод.</p>
-                    </div>
+                    <h3>Армирование</h3>
+                    <p>Монтаж каркаса из арматуры, подготовка закладных элементов для коммуникаций, обеспечение необходимого защитного слоя.</p>
                 </div>
                 <div class="stage-card">
                     <div class="stage-number">06</div>
-                    <div class="stage-content">
-                        <h3>Сдача объекта</h3>
-                        <p>Проводим финальную проверку качества и передаем готовый фундамент заказчику.</p>
-                    </div>
+                    <h3>Заливка бетона</h3>
+                    <p>Приготовление и заливка бетона с использованием специализированного оборудования, виброуплотнение для удаления воздуха.</p>
+                </div>
+                <div class="stage-card">
+                    <div class="stage-number">07</div>
+                    <h3>Уход за бетоном</h3>
+                    <p>Обеспечение правильного ухода за бетоном в процессе набора прочности, своевременное увлажнение, защита от осадков.</p>
+                </div>
+                <div class="stage-card">
+                    <div class="stage-number">08</div>
+                    <h3>Сдача работы</h3>
+                    <p>Демонтаж опалубки, финальная проверка качества, передача документации и уборка территории. Гарантия на все выполненные работы.</p>
                 </div>
             </div>
         </div>
@@ -333,9 +348,8 @@
                 <div class="testimonial-card">
                     <div class="testimonial-header">
                         <div class="client-info">
-                            <div class="client-name">Анатолий</div>
-                            <div class="project-info">Фундамент для коттеджа 12х12</div>
-                            <div class="project-date">20.08.2023</div>
+                            <div class="client-name">Надежда</div>
+                            <div class="project-info">Фундамент под дом</div>
                         </div>
                         <div class="rating">
                             <i class="fas fa-star"></i>
@@ -346,10 +360,31 @@
                         </div>
                     </div>
                     <p class="testimonial-text">
-                        Заказал фундамент «под ключ» с учетом сложных грунтов. Менеджер предложил оптимальный вариант с выпуском арматуры. Бригада сработала оперативно. Сделали разметку, установили сваи за 2 дня. Все четко, без накладок, т.к. технология отработана до мелочей. По стоимости самое оптимальное предложение на рынке. Благодарю.
+                        Рекомендую ИП Атрошенко Е.В., заливали фундамент под дом в аг.Нарочь по 240 указу. Работа выполнена качественно, могу сказать, что все технологии были соблюдены, так как сам прораб. Лично от себя отмечу пунктуальность и соблюдение сроков!
                     </p>
                     <div class="testimonial-footer">
-                        <span class="order-number">#00215</span>
+                        <span class="location">Нарочь</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="client-info">
+                            <div class="client-name">Михаил</div>
+                            <div class="project-info">Строительство фундамента</div>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        Остался очень доволен результатом работы и подходом к поставленным задачам. Помимо того, что ребята владеют знаниями и опытом в строительстве, могут дать с ходу качественные ответы по стройке и по материалам, ссылаясь на отраслевые нормы, ещё присутствует умение объяснить казалось бы непростые вещи доступным языком. Есть внимание к деталям, желание сделать больше и шире чем рамки первоначальной задачи. Рекомендую, отличные специалисты!
+                    </p>
+                    <div class="testimonial-footer">
                         <span class="location">Вилейка</span>
                     </div>
                 </div>
@@ -357,9 +392,8 @@
                 <div class="testimonial-card">
                     <div class="testimonial-header">
                         <div class="client-info">
-                            <div class="client-name">Дмитрий</div>
-                            <div class="project-info">Строительство фундамента 10х12</div>
-                            <div class="project-date">21.01.2024</div>
+                            <div class="client-name">Светлана</div>
+                            <div class="project-info">Ленточный фундамент</div>
                         </div>
                         <div class="rating">
                             <i class="fas fa-star"></i>
@@ -370,102 +404,108 @@
                         </div>
                     </div>
                     <p class="testimonial-text">
-                        Отличные ребята. Приехали, сделали все быстро и четко, вбили 30 свай и все было идеально. Оборудование у них новое и современное. Они уехали и оставили идеальный порядок. Я буду рекомендовать их всем.
+                        Искренне благодарна бригаде за отличную работу, выполненную точно в оговоренные сроки, несмотря на капризы погоды. Понравился подход к работе — перед началом строительства получила детальную консультацию, а в процессе всегда была на связи с прорабом. Результат полностью соответствует нашим ожиданиям, будем рекомендовать родным и друзьям!
                     </p>
                     <div class="testimonial-footer">
-                        <span class="order-number">#00132</span>
-                        <span class="location">Вилейка</span>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="client-info">
-                            <div class="client-name">Елена</div>
-                            <div class="project-info">Ленточный фундамент 8х10</div>
-                            <div class="project-date">15.12.2023</div>
-                        </div>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <p class="testimonial-text">
-                        Очень довольна работой компании. Сделали все в срок, несмотря на сложные погодные условия. Особенно порадовала подробная консультация перед началом работ и постоянная связь с прорабом. Фундамент получился именно такой, как мы хотели.
-                    </p>
-                    <div class="testimonial-footer">
-                        <span class="order-number">#00198</span>
                         <span class="location">Вилейка</span>
                     </div>
                 </div>
             </div>
-            <div class="testimonials-note">
+            <div class="gallery-note">
                 <p>* Все отзывы реальные и могут быть подтверждены при личной встрече</p>
-                <button class="cta-button">Оставить свой отзыв</button>
             </div>
         </div>
     </section>
 
     <section id="contacts" class="contacts">
+        <!-- Скрываем блок с картой -->
+        <div class="map-container full-width" style="display: none;">
+            <div class="map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37589.97443434429!2d27.002661!3d54.491270!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbd0bd6e9008cf%3A0xf1e0e141ce1a8e0c!2z0JLQuNC70LXQudC60LAsINCc0LjQvdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1sru!2sby!4v1234567890"
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+        
         <div class="container">
             <h2>Контакты</h2>
-            <div class="contacts-wrapper">
+            <div class="contacts-wrapper centered">
                 <div class="contact-info-block">
-                    <div class="contact-item">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <div class="contact-text">
-                            <h3>Минская область, г. Вилейка</h3>
+                    <h3 class="contact-section-title">Наши контакты</h3>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div class="contact-text">
+                                <h4>Адрес</h4>
+                                <p>Минская область, г. Вилейка</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fa-solid fa-phone"></i>
-                        <div class="contact-text">
-                            <h3>Телефон</h3>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="contact-text">
+                                <h4>Телефон</h4>
                                 <p><a href="tel:+375445118049">+375(44)511-80-49</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <div class="contact-text">
+                                <h4>Режим работы</h4>
+                                <p>Ежедневно 8:00 - 22:00</p>
+                            </div>
+                        </div>
+                        <div class="contact-item" style="display: none;">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p><a href="mailto:fundament.vileyka@yandex.ru">fundament.vileyka@yandex.ru</a></p>
+                            </div>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fa-solid fa-clock"></i>
-                        <div class="contact-text">
-                            <h3>Режим работы</h3>
-                            <p>Ежедневно 8:00 - 22:00</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fa-solid fa-envelope"></i>
-                        <div class="contact-text">
-                            <h3>Email</h3>
-                            <p><a href="mailto:fundament.vileyka@yandex.ru">fundament.vileyka@yandex.ru</a></p>
-                        </div>
-                    </div>
+                    
                     <div class="company-details">
-                        <p>ИП Атрошенко Е.В.</p>
-                        <p>УНП 100693551</p>
-                        <p>р/с BY36BAPB 3013 6946 3001 0000 0000</p>
-                        <p>БИК BAPBBY2X</p>
-                    </div>
-                </div>
-                <div class="map-container">
-                    <div class="map">
-                        <!-- Замените URL на актуальный для вашего адреса -->
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37589.97443434429!2d27.002661!3d54.491270!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbd0bd6e9008cf%3A0xf1e0e141ce1a8e0c!2z0JLQuNC70LXQudC60LAsINCc0LjQvdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1sru!2sby!4v1234567890"
-                            width="100%" 
-                            height="450" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
+                        <h3 class="contact-section-title">Реквизиты компании</h3>
+                        <ul class="requisites-list">
+                            <li><strong>ИП:</strong> Атрошенко Е.В.</li>
+                            <li><strong>УНП:</strong> 100693551</li>
+                            <li><strong>Р/с:</strong> BY36BAPB 3013 6946 3001 0000 0000</li>
+                            <li><strong>БИК:</strong> BAPBBY2X</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="regions">
-                <h3>Районы обслуживания</h3>
-                <div class="regions-grid">
+        </div>
+    </section>
+
+    <section id="regions" class="regions">
+        <div class="container">
+            <h2>Районы обслуживания</h2>
+            <p class="regions-description">Мы выполняем работы по строительству фундаментов в Вилейке и по всей Минской области. Благодаря расположению в Вилейке, мы предлагаем выгодные условия по логистике для следующих районов:</p>
+            
+            <div class="regions-grid">
+                <div class="region-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Вилейский район</span>
+                </div>
+                <div class="region-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Молодечненский район</span>
+                </div>
+                <div class="region-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Мядельский район</span>
+                </div>
+            </div>
+            
+            <div class="regions-towns">
+                <h3>Населенные пункты:</h3>
+                <div class="towns-grid">
                     <span>Молодечно</span>
                     <span>Сморгонь</span>
                     <span>Вилейка</span>
@@ -484,6 +524,10 @@
                     <span>Стешицы</span>
                     <span>Жарсвяты</span>
                 </div>
+            </div>
+            
+            <div class="regions-note">
+                <p>* Выезд в другие районы Минской области обсуждается индивидуально</p>               
             </div>
         </div>
     </section>
@@ -583,7 +627,31 @@
         const menuToggle = document.querySelector('.mobile-menu-toggle');
         const mobileMenu = document.querySelector('.mobile-menu');
         const overlay = document.querySelector('.mobile-menu-overlay');
-
+        const header = document.querySelector('.header');
+        
+        // Отслеживаем положение скролла 
+        let lastScrollTop = 0;
+        
+        // Функция для добавления класса fixed к хедеру при скролле
+        function handleScroll() {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (currentScroll > 100) {
+                header.classList.add('fixed');
+                document.body.style.paddingTop = header.offsetHeight + 'px';
+            } else {
+                header.classList.remove('fixed');
+                document.body.style.paddingTop = '0';
+            }
+            
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        }
+        
+        // Добавляем обработчик скролла
+        window.addEventListener('scroll', handleScroll);
+        // Вызываем функцию сразу для установки правильного состояния при загрузке
+        handleScroll();
+        
         menuToggle.addEventListener('click', function() {
             this.classList.toggle('active');
             mobileMenu.classList.toggle('active');
@@ -598,33 +666,141 @@
             document.body.style.overflow = '';
         });
 
-        // Закрытие меню при клике на ссылку
-        const menuLinks = document.querySelectorAll('.mobile-menu-list a');
-        menuLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                menuToggle.classList.remove('active');
-                mobileMenu.classList.remove('active');
-                overlay.classList.remove('active');
-                document.body.style.overflow = '';
-            });
-        });
-
-        // Добавляем плавную прокрутку для ссылок в футере
-        document.querySelectorAll('.footer-links a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
+        // Функция для плавной прокрутки при клике на ссылку
+        function smoothScroll(event, link) {
+            event.preventDefault();
+            const targetId = link.getAttribute('href');
+            
+            if (targetId.startsWith('#')) {
                 const targetSection = document.querySelector(targetId);
                 
                 if (targetSection) {
-                    targetSection.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
+                    // Закрываем мобильное меню, если оно открыто
+                    menuToggle.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                    overlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                    
+                    // Расчет положения с учетом фиксированного хедера
+                    const headerHeight = header.classList.contains('fixed') 
+                        ? header.offsetHeight 
+                        : 0;
+                    const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset;
+                    const offsetPosition = targetPosition - headerHeight;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        }
+        
+        // Добавляем обработчики для всех ссылок меню (десктопного и мобильного)
+        const allMenuLinks = document.querySelectorAll('.mobile-menu-list a, .desktop-menu-list a, .footer-links a[href^="#"]');
+        allMenuLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                smoothScroll(e, this);
+            });
+        });
+
+        // Функция для обновления активного пункта меню при прокрутке
+        function updateActiveMenuItem() {
+            const sections = document.querySelectorAll('section[id]');
+            const scrollPosition = window.scrollY;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    document.querySelectorAll('.desktop-menu-list a, .mobile-menu-list a').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + sectionId) {
+                            link.classList.add('active');
+                        }
                     });
                 }
             });
-        });
+        }
+
+        // Запускаем функцию при прокрутке
+        window.addEventListener('scroll', updateActiveMenuItem);
     });
     </script>
+
+    <style>
+    /* Переопределяем высоту хедера */
+    .header {
+        min-height: auto;
+        padding: 20px 0 40px; /* Увеличенный нижний отступ вместо большой высоты */
+        /* Остальные свойства (фон, цвет и т.д.) должны быть сохранены из CSS */
+    }
+
+    /* Стили для фиксированного хедера */
+    .header.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #333; /* Темный фон как в оригинале */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(images/foundation-bg.jpg);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        padding: 10px 0; /* Уменьшенный padding для фиксированного хедера */
+        min-height: auto;
+        color: white;
+    }
+
+    .header.fixed .hero {
+        display: none;
+    }
+
+    /* Контейнер внутри фиксированного хедера */
+    .header.fixed .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    /* Настройки размеров секций */
+    section {
+        min-height: auto;
+        padding: 60px 0;
+    }
+
+    /* Специфические настройки для героя */
+    .hero {
+        padding: 40px 0;
+    }
+
+    /* Мобильные адаптации */
+    @media (max-width: 768px) {
+        .header {
+            min-height: auto;
+            padding: 15px 0 30px;
+        }
+        
+        .header.fixed {
+            padding: 10px 0;
+        }
+        
+        .header.fixed .logo {
+            font-size: 16px;
+        }
+        
+        .header.fixed .container {
+            padding: 0 15px;
+        }
+        
+        section {
+            padding: 40px 0;
+        }
+        
+        .hero {
+            padding: 20px 0;
+        }
+    }
+    </style>
 </body>
 </html> 
